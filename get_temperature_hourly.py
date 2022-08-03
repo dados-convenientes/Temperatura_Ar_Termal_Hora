@@ -69,4 +69,4 @@ df_termal = df_termal.rename(columns={0: "lat", 1: "lon", 2: "Value"})
 
 # Get today date now to file name when export to csv or excel with encoding utf8
 df.to_csv((datetime.now()+timedelta(hours=1)).strftime('data_sources/data_transformed/air_temperature-%Y-%m-%d-%H-%M-%S.csv'), encoding='utf8', index=False)
-df_termal.to_csv((datetime.now()+timedelta(hours=1)).strftime('data_sources/data_transformed/air_temperature-%Y-%m-%d-%H-%M-%S.csv'), encoding='utf8', index=False)
+df_termal.to_csv((datetime.now()+timedelta(hours=1)).strftime('data_sources/data_transformed/thermal_amplitude-%Y-%m-%d-%H-%M-%S.csv'), encoding='utf8', index=False)
